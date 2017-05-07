@@ -1,0 +1,12 @@
+<div id="test">
+    A random div
+    <component name="test"/>
+    <%if(this.functions.showSkills()) {%>
+        <%for(var index in this.data.skills) {%>
+            <h4 class="text">Skill:</h4>
+            <a href="/skill" click="stuff"><%this.data.skills[index]%></a>
+        <%}%>
+    <%} else {%>
+    <p>none</p>
+    <%}%>
+</div>
