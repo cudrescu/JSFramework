@@ -2,10 +2,14 @@
     A random div
     <component name="test"/>
     <%if(this.functions.showSkills()) {%>
-        <%for(var index in this.data.skills) {%>
+        <%for(var index in this.data.static.skills) {%>
             <h4 class="text">Skill:</h4>
-            <a href="/skill" click="stuff"><%this.data.skills[index]%></a>
+            <a href="/skill"><%this.data.static.skills[index]%></a>
         <%}%>
+    <br/>
+    <input type="number" data-bind-age="age"/>
+    <button id="showAge">Show Age</button>
+    <h3 data-bind-age="age"></h3>
     <%} else {%>
     <p>none</p>
     <%}%>
